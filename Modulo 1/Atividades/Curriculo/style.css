@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    padding: 15px;
+  }
+  
+  header fieldset {
+    text-align: center;
+    position: relative;
+  }
+  
+  header fieldset h1 {
+    color: #048bb6;
+  }
+  
+  header fieldset legend {
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 0 5px;
+    background: white;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #048bb6;
+  }
+  
+  .column-left {
+    margin-right: 50px;
+    width: 55vw;
+  }
+  
+  .column-right {
+    width: 40vw;
+  }
+  
+  .title {
+    color: #048bb6;
+    width: 100%;
+    border-bottom: 1px solid black;
+    font-style: italic;
+  }
+  
+  #summary p {
+    line-height: 20px;
+  }
+  
+  ul {
+    margin-bottom: 30px;
+    line-height: 20px;
+  }
+  
+  h3 {
+    margin: 3px;
+  }
+  
+  p {
+    font-style: italic;
+    margin: 3px;
+  }
+  
+  #education {
+  }
+  
+  #contact {
+    text-align: left;
+  }
+  
+  .noList {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  
+  .point {
+    background: #cccccc;
+    width: 10px;
+    height: 10px;
+  }
+  
+  #skills li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .checked {
+    background: #048bb6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  
+  #ps li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #referal {
+  }
+  
