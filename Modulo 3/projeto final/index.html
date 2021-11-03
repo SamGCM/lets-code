@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Comprar imóveis</title>
+</head>
+<body>
+    <header>
+        <div class='container__logo' >
+            <img src="./images/Viva-Real-Large-Logo-Override.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a href="#">COMPRAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">ALUGAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">IMÓVEIS NOVOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">BEST FRIDAY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">DESCOBRIR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">FINANCIAMENTO</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-item">
+                    <a href="#">ANUNCIAR IMÓVEIS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">ENTRAR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="sidebar">
+            <form id='form-main'>
+                <label id="label-search" for="search">
+                    <h2 class='label-form'>LOCALIZAÇÃO DO IMÓVEL</h2>
+                    <input type="text" placeholder="Digite uma rua, bairro ou cidade" id="input-search" name='search'/>
+                </label>
+                <div id="container__searched">
+                </div>
+                <div id='container__toggle'>
+                    <h2 class='label-form'>IMÓVEL COM</h2>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Tour Virtual ou Vídeo</span>
+                    </div>
+                </div>
+                <div id='container__select'>
+                    <h2 class='label-form'>TIPO DE IMÓVEL</h2>
+                    <select name='types' id='types' disabled>
+                        <option value="">Mostrar todos</option>
+                    </select>
+                </div>
+                <div id='container__value'>
+                    <div>
+                        <h2 class='label-form label-value'>PREÇO MÍNIMO</h2>
+                        <input class='input-value' dir="rtl" type='number' />
+                    </div>
+                    <hr id='line'></hr>
+                    <div>
+                        <h2 class='label-form label-value'>PREÇO MÁXIMO</h2>
+                        <input class='input-value' type='text' dir="rtl" placeholder='ilimitado'/>
+                    </div>
+                </div>
+                <div id='container__rooms'>
+                    <h2 class="label-form" >NÚMERO DE QUARTOS</h2>
+                    <div class="container-radios">
+                        <label for="rooms-1">
+                            <input class='radio' type="radio" value='1'
+                                name="rooms" id="rooms-1" alt='1+'>
+                        </label>
+    
+                        <label for="rooms-2">
+                            <input class='radio' type="radio" value='2'
+                            name="rooms" id="rooms-2" alt='2+'>
+                        </label>
+    
+                        <label for="rooms-3">
+                            <input class='radio' type="radio" value='3'
+                            name="rooms" id="rooms-3" alt='3+'>
+                        </label>
+    
+                        <label for="rooms-4">
+                            <input class='radio' type="radio" value='4'
+                            name="rooms" id="rooms-4" alt='4+'>
+                        </label>
+    
+                        <label for="rooms-5">
+                            <input class='radio' type="radio" value='5'
+                            name="rooms" id="rooms-5" alt='5+'>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <form id='form-submain'>
+                <div id='container__area'>
+                    <div>
+                        <span class='label-form label-value'>ÁREA MÍNIMA</span>
+                        <input class='input-value' dir="rtl" type='number' />
+                    </div>
+                    <div id='line'></div>
+                    <div>
+                        <span class='label-form label-value'>ÁREA MÁXIMA</span>
+                        <input class='input-value' type='text' dir="rtl" placeholder='ilimitado'/>
+                    </div>
+                </div>
+
+                <div id='container__parking'>
+                    <h2 class="label-form" >NÚMERO DE VAGAS NA GARAGEM</h2>
+                    <div class="container-radios">
+                        <label for="parking-1">
+                            <input class='radio' type="radio" value='1'
+                                name="parking" id="parking-1" alt='1+'>
+                        </label>
+    
+                        <label for="parking-2">
+                            <input class='radio' type="radio" value='2'
+                            name="parking" id="parking-2" alt='2+'>
+                        </label>
+    
+                        <label for="parking-3">
+                            <input class='radio' type="radio" value='3'
+                            name="parking" id="parking-3" alt='3+'>
+                        </label>
+    
+                        <label for="parking-4">
+                            <input class='radio' type="radio" value='4'
+                            name="parking" id="parking-4" alt='4+'>
+                        </label>
+    
+                        <label for="parking-5">
+                            <input class='radio' type="radio" value='5'
+                            name="parking" id="parking-5" alt='5+'>
+                        </label>
+                    </div>
+                </div>
+
+                <div id='container__bathroom'>
+                    <h2 class="label-form" >NÚMERO DE BANHEIROS</h2>
+                    <div class="container-radios">
+                        <label for="bath-1">
+                            <input class='radio' type="radio" value='1'
+                                name="bath" id="bath-1" alt='1+'>
+                        </label>
+    
+                        <label for="bath-2">
+                            <input class='radio' type="radio" value='2'
+                            name="bath" id="bath-2" alt='2+'>
+                        </label>
+    
+                        <label for="bath-3">
+                            <input class='radio' type="radio" value='3'
+                            name="bath" id="bath-3" alt='3+'>
+                        </label>
+    
+                        <label for="bath-4">
+                            <input class='radio' type="radio" value='4'
+                            name="bath" id="bath-4" alt='4+'>
+                        </label>
+    
+                        <label for="bath-5">
+                            <input class='radio' type="radio" value='5'
+                            name="bath" id="bath-5" alt='5+'>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <main id='content'>
+            <nav id='navtabs'>
+                <ul>
+                    <li>
+                        <a href="#">COMPRAR</a>
+                    </li>
+                    <li>
+                        <a href="#">ALUGAR</a>
+                    </li>
+                    <li>
+                        <a href="#">IMÓVEIS NOVOS</a>
+                    </li>
+                    <li>
+                        <a href="#">SELEÇÃO VIVA REAL</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="quantityProperties" >
+                </div>
+            <ul id='tagsSearch'>
+            </ul>
+            <article id="container__results">
+                <ul id="results__list">
+                    <div id="error__search">
+                        <h1>Pesquina não encontrada</h1>
+                        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_bdec2jzh.json"  background="transparent"  speed="1"  style="width: 800px; height: 500px;"  loop  autoplay></lottie-player>
+                    </div>
+                </ul>
+            </article>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+    <script src='./index.js' type="module"></script>
+    <script src='./functions/createTags.js' type="module"></script>
+    <script src='./functions/translate.js' type="module"></script>
+    <script src='./functions/createCard.js' type="module"></script>
+    <script src='./functions/clearSearch.js' type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

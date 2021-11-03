@@ -139,7 +139,7 @@ main #profile {
 }
 
 .display{
-
+    height: 200px;
 }
 
 .display img {
@@ -152,48 +152,86 @@ main #profile {
 }
 
 .container-img-profile img{
-    width: 10.6rem;
+    width: 15.2rem;
     position: absolute;
-    transform: translate(3rem, -8.5rem);
+    transform: translate(3rem, -13rem);
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.location {
+    color: #0a66c2;
+    font-weight: 600;
+}
+
+#local{
+    display: flex;
+    align-items: center;
+}
+
+#local a {
+    color: #0a66c2;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.conections{
+    color: #0a66c2;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 3rem;
 }
 
 #profile h2 {
     margin: 4rem 0 .2rem 3rem;
+    font-size: 2.4rem;
 } 
 
 #profile h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin: .2rem 0 .2rem 3rem;
 }
 
 #profile p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: .2rem 0 .2rem 3rem;
     filter: opacity(0.5);
 }
 
 .container-btn {
     margin: 1.2rem 0 .2rem 3rem;
-
 }
 
 .container-btn :first-child{
     background: #0B65C2;
     color: var(--primary-color);
     border-radius: 20px;
-    padding: .4rem 1.6rem;
+    padding: .6rem 1.2rem;
     border: none;
     font-weight: 700;
 }
 
+.container-btn :first-child:hover{
+    padding: .6rem 1.2rem;
+    border: none;
+    background: #095199;
+
+}
+
 .container-btn a {
-    font-size: 1.1rem;
-    padding: .4rem 1.6rem;
+    color: #666666;
+    font-size: 1.6rem;
+    padding: .6rem 1.6rem;
     border-radius: 20px;
     border: 1px solid #666666;
     margin-right: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.container-btn a:hover{
+    border: 2px solid #585858;
+    padding: .5rem 1.5rem;
 }
 
 main #history {
@@ -222,7 +260,8 @@ main #history {
 
 .subtitle {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: #585858;
 }
 
 .gray-text {
@@ -237,9 +276,10 @@ main #history {
 }
 
 .separator {
-    height: 3px;
-    width: 100%;
+    height: 2px;
+    width: 70%;
     background: var(--bg-color);
+    transform: translateX(20%);
 }
 
 /* RESPONSIVE */
