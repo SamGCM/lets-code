@@ -1,0 +1,17 @@
+<form [formGroup]="father">
+    <input type="text" formControlName="name" placeholder="Digite seu nome">
+    <input type="text" formControlName="city" placeholder="Sua cidade">
+    <label for="">
+        Deseja informar seus hobbies?
+        <input 
+            [(ngModel)]="hasHobbies"
+            type="checkbox"
+            name="hobby"
+            formControlName="hasHobbies" 
+            placeholder="Digite seus hobbies">
+    </label>
+    <div [hidden]="!father.value.hasHobbies" >
+        <app-hobby></app-hobby>
+    </div>
+    <button [disabled]="!father.valid"  (click)="show()">Verificar</button>
+</form>

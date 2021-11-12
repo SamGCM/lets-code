@@ -1,0 +1,16 @@
+<form #formDirective="ngForm">
+    <input [(ngModel)]="inputHobby"  
+        name="inputHobby"
+        (blur)="createHobby(formDirective, input.value)"
+        type="text"
+        #input
+    />
+</form>
+<div id='container-hobbies'>
+    <ul id="list-hobbies">
+        <li class="selectedHobby" *ngFor="let hobby of hobbies" >
+            {{ hobby }}
+        </li>
+    </ul>
+    
+</div>

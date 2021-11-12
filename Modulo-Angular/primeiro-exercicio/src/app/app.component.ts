@@ -7,26 +7,6 @@ import { FormControl, FormGroup, FormBuilder, RequiredValidator, Validators } fr
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private fb: FormBuilder) {
+  constructor() {}
 
-  }
-
-  email: any = ""
-  father: any = ""
-
-  ngOnInit() {
-    // this.father = new FormGroup({
-    //   name: new FormControl(""),
-    //   lastName: new FormControl(""),
-    // })
-    this.father = this.fb.group({
-      email: ["", Validators.required],
-      lastName: ["", Validators.required]
-    })
-  }
-  
-  show() {
-
-    console.log(this.father)
-  }
 }
