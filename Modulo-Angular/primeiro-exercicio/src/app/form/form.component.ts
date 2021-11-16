@@ -24,6 +24,10 @@ export class FormComponent implements OnInit {
       hobbies: [""]
     })
   }
+
+  onNovoValor(e: any) {
+    this.father.value.hobbies = e
+  }
   
   show() {
     console.log(this.father)

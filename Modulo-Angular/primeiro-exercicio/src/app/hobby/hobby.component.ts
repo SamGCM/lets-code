@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {FormBuilder, NgForm } from '@angular/forms';
 
 @Component({
@@ -12,6 +12,8 @@ export class HobbyComponent implements OnInit {
   inputHobby: string = ''
   form: any = ""
 
+  @Output() novoValor = new EventEmitter()
+
 
   constructor(private fb: FormBuilder) { }
 
@@ -22,8 +24,8 @@ export class HobbyComponent implements OnInit {
   }
 
   createHobby(form: NgForm, e: string) {
-    this.hobbies.push(e)
-    console.log(this.form)
+    e.length > 0 ? this.hobbies.push(e) : null
+    this.novoValor.emit(this.hobbies)
     form.resetForm()
   }
 }

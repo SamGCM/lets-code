@@ -11,7 +11,8 @@
             placeholder="Digite seus hobbies">
     </label>
     <div [hidden]="!father.value.hasHobbies" >
-        <app-hobby></app-hobby>
+        <app-hobby (novoValor)="onNovoValor($event)"
+        ></app-hobby>
     </div>
     <button [disabled]="!father.valid"  (click)="show()">Verificar</button>
 </form>
