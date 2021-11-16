@@ -1,0 +1,30 @@
+*{
+    list-style: none;
+}
+
+nav {
+    background: #232F3E;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    color: #fff;
+    margin: 5px  0 6px 0;
+    padding: 7px 8px;
+    box-shadow: none;
+    height: 12px;
+    box-sizing: content-box;
+    border:1px solid #232F3E;
+    border-radius: 2px;
+    cursor: pointer;
+    background: inherit;
+}
+
+button:hover {
+    border-color: #fff;
+}
+
